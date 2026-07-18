@@ -464,7 +464,7 @@ body {
     transition: color 0.3s;
     margin: 0 auto;
 }
-/* ===== Адаптив для планшетов ===== */
+
 @media (max-width: 768px) {
     .player-container {
         padding: 28px 20px;
@@ -547,7 +547,6 @@ body {
     }
 }
 
-/* ===== Адаптив для смартфонов ===== */
 @media (max-width: 480px) {
     body {
         padding: 10px;
@@ -684,7 +683,6 @@ body {
     }
 }
 
-/* Совсем маленькие экраны */
 @media (max-width: 340px) {
     .vinyl-wrapper {
         width: 150px;

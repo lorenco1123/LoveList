@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our PlayList</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="PlayList.css">
+</head>
+
+<body>
+    <div class="player-container">
+        <div class="header">
+            <div class="header-title">
+                <i class="fa-solid fa-heart"></i> Our Mini Playlist
+            </div>
+            <div class="badge">
+                <i class="fa-solid fa-heart"></i> For You
+            </div>
+        </div>
+
+        <div class="main-section">
+            <div class="handwritten-text">
+                Every song reminds me of you ♡
+            </div>
+
+            <div class="vinyl-wrapper">
+                <div class="vinyl-glow" id="vinylGlow"></div>
+                <svg class="tonearm" id="tonearm" viewBox="0 0 100 200">
+                    <path d="M90,10 L90,60 L50,130 L45,150 L52,154 L57,134 L95,62 L95,10 Z" fill="#888" />
+                    <circle cx="90" cy="15" r="8" fill="#444" />
+                    <rect x="40" y="145" width="10" height="15" transform="rotate(15 45 150)" fill="#111" />
+                    <rect x="42" y="156" width="6" height="4" transform="rotate(15 45 150)" fill="#ff2e63"
+                        id="needleTip" />
+                </svg>
+
+                <div class="vinyl-disk" id="vinylDisk">
+                    <div class="vinyl-disk-line first"></div>
+                    <div class="vinyl-disk-line second"></div>
+                    <div class="vinyl-disk-line third"></div>
+                    <div class="vinyl-disk-line forth"></div>
+
+                    <div class="vinyl-center">
+                        <span>I love</span>
+                        <span>you ♡</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="floating-hearts">
+                <i class="fa-solid fa-heart" style="transform: rotate(-15deg); font-size: 28px;"></i>
+                <i class="fa-solid fa-heart"
+                    style="transform: translate(-10px, -5px) rotate(10deg); font-size: 18px;"></i>
+                <i class="fa-solid fa-heart"
+                    style="transform: translate(5px, -10px) rotate(-5deg); font-size: 22px;"></i>
+            </div>
+        </div>
+
+        <div class="controls-section">
+            <div class="current-song-info">
+                <div class="song-title" id="currentTitle">None</div>
+                <div class="song-artist" id="currentArtist">None</div>
+            </div>
+
+            <div class="progress-container">
+                <span id="currentTime">0:00</span>
+                <div class="progress-bar-wrapper" id="progressBar">
+                    <div class="progress-fill" id="progressFill" style="width: 0%"></div>
+                </div>
+                <span id="totalTime">0:00</span>
+            </div>
+
+            <div class="controls-buttons">
+                <button class="control-btn"><i class="fa-solid fa-shuffle"></i></button>
+                <button class="control-btn" id="prevBtn"><i class="fa-solid fa-backward-step"></i></button>
+                <button class="play-pause-btn" id="playBtn">
+                    <i class="fa-solid fa-play" id="playIcon"></i>
+                </button>
+                <button class="control-btn" id="nextBtn"><i class="fa-solid fa-forward-step"></i></button>
+                <button class="control-btn"><i class="fa-solid fa-repeat"></i></button>
+            </div>
+        </div>
+        <div class="playlist-title">
+            <i class="fa-solid fa-music music-icon"></i> Our Favorite Songs
+        </div>
+
+        <div class="playlist" id="playlist"></div>
+
+        <div class="footer">
+            <div class="footer-love">You + Me = ♡</div>
+        </div>
+    </div>
+    <script src="PlayList.js"></script>
+</body>
+
+</html>
+
